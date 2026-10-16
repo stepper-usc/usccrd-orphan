@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hans"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="越剧《赵氏孤儿》余青峰编剧，八场完整彩色角色剧本。" name="description"/><title>赵氏孤儿 · 彩色角色剧本</title>
+<style>
+:root{color-scheme:light;--bg:#f6f4ef;--paper:#fffefa;--ink:#262a30;--muted:#646b74;--line:#deddd6;--accent:#364e67}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:28px}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Serif SC","Songti SC","SimSun",serif;line-height:1.95}a{color:inherit}
+.layout{display:grid;grid-template-columns:245px minmax(0,800px);gap:36px;max-width:1150px;margin:auto;padding:36px 24px 90px}
+aside{position:sticky;top:24px;align-self:start;border:1px solid var(--line);border-radius:12px;background:var(--paper);padding:22px;font-family:system-ui,"PingFang SC",sans-serif}
+.brand{font-size:1.15rem;font-weight:700;margin-bottom:5px}.subtitle{font-size:.76rem;color:var(--muted);margin-bottom:22px}.toc-title{font-size:.72rem;letter-spacing:.15em;color:var(--muted);margin-bottom:9px}
+nav a{display:flex;justify-content:space-between;gap:10px;padding:8px 9px;border-radius:6px;text-decoration:none;font-size:.89rem}nav a span{font-size:.78rem;color:var(--muted)}nav a:hover,nav a:focus{background:#e9eef1}
+.controls{border-top:1px solid var(--line);padding-top:18px;margin-top:20px;display:flex;gap:8px;flex-wrap:wrap}button{font:inherit;background:transparent;border:1px solid #b9bfc3;border-radius:7px;padding:7px 12px;cursor:pointer;color:inherit}button:hover{background:#edf0f1}
+main{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:42px 58px;box-shadow:0 10px 35px #28231b08;min-width:0}h1{text-align:center;font-size:2.4rem;letter-spacing:.12em;margin:0 0 4px}h1+p{text-align:center;color:var(--muted);margin-top:0}h2{font-size:1.42rem;margin:60px 0 23px;border-bottom:1px solid var(--line);padding-bottom:12px}h2:first-of-type{margin-top:34px}p{margin:10px 0}blockquote{border-left:3px solid #9daeb8;margin:22px 0;padding:1px 17px;color:var(--muted);font-size:.9rem}ul{padding-left:1.5rem;columns:2}li{break-inside:avoid;margin:3px 0}hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+.dialogue{margin:13px 0;padding:3px 0 3px 13px;border-left:2px solid #d9dcd9;line-height:1.95}.dialogue span{font-weight:500}.dialogue strong{font-family:system-ui,"PingFang SC",sans-serif;font-size:.94em;margin-right:5px}
+main em{color:#7b8084;font-style:italic}a[id^="scene-"]{display:block;scroll-margin-top:25px}
+.mobile-toc{display:none}footer{font:12px system-ui,sans-serif;color:var(--muted);text-align:center;margin-top:60px}
+body.large main{font-size:1.16rem}body.dark{color-scheme:dark;--bg:#171b20;--paper:#232931;--ink:#e8e9e8;--muted:#b6bdc4;--line:#45505b;--accent:#b7cbd9}body.dark .dialogue span[style]{filter:brightness(1.55) saturate(.8)}body.dark nav a:hover{background:#35414c}body.dark button:hover{background:#35414c}
+@media(max-width:850px){.layout{display:block;padding:12px 10px 40px}aside{display:none}main{padding:27px 21px}.mobile-toc{display:block;position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line);font-family:system-ui,sans-serif;padding:9px 17px}.mobile-toc summary{cursor:pointer;font-weight:600}.mobile-toc nav{display:grid;grid-template-columns:repeat(2,1fr);padding:9px 0}h1{font-size:2rem}ul{columns:1}}
+@media print{body{background:white}.layout{display:block;padding:0}aside,.mobile-toc{display:none}main{border:0;box-shadow:none;padding:0}.dialogue{break-inside:avoid}h2{break-after:avoid}}
+
+/* Per-scene character key and stronger line distinction */
+.scene-cast{margin:12px 0 30px;padding:15px 18px;border:1px solid var(--line);border-radius:9px;background:var(--bg);font-family:system-ui,"PingFang SC",sans-serif}
+.scene-cast-title{font-size:.78rem;color:var(--muted);font-weight:650;margin-bottom:10px;letter-spacing:.04em}
+.cast-items{display:flex;flex-wrap:wrap;gap:7px 10px}
+.cast-chip{display:inline-flex;align-items:center;gap:7px;padding:3px 10px;border:1px solid var(--line);border-radius:100px;background:var(--paper);font-size:.87rem;font-weight:650;color:var(--speaker-color)}
+.cast-dot{height:9px;width:9px;border-radius:50%;background:var(--speaker-color);flex:none}
+.dialogue{border-left:3px solid var(--speaker-color,#9daeb8);padding-left:13px}
+body.dark .dialogue span[style]{filter:brightness(1.4) saturate(.9)}
+body.dark .cast-chip{filter:brightness(1.25)}
+@media(max-width:850px){.scene-cast{padding:12px}.cast-items{gap:6px}.cast-chip{font-size:.82rem}}
+</style></head><body>
+<div class="mobile-toc"><details><summary>目录 · 跳转场次</summary><nav><a href="#scene-1">第1场 <span>灭门</span></a>
+<a href="#scene-2">第2场 <span>托孤</span></a>
+<a href="#scene-3">第3场 <span>出府</span></a>
+<a href="#scene-4">第4场 <span>抉择</span></a>
+<a href="#scene-5">第5场 <span>舍子</span></a>
+<a href="#scene-6">第6场 <span>十六年后</span></a>
+<a href="#scene-7">第7场 <span>真相</span></a>
+<a href="#scene-8">第8场 <span>终局</span></a></nav><div class="controls"><button onclick="document.body.classList.toggle('large')">调整字号</button><button onclick="document.body.classList.toggle('dark')">切换深色</button></div></details></div>
+<div class="layout"><aside><div class="brand">赵氏孤儿</div><div class="subtitle">余青峰 · 越剧剧本 · 八场</div><div class="toc-title">场次目录</div><nav><a href="#scene-1">第1场 <span>灭门</span></a>
+<a href="#scene-2">第2场 <span>托孤</span></a>
+<a href="#scene-3">第3场 <span>出府</span></a>
+<a href="#scene-4">第4场 <span>抉择</span></a>
+<a href="#scene-5">第5场 <span>舍子</span></a>
+<a href="#scene-6">第6场 <span>十六年后</span></a>
+<a href="#scene-7">第7场 <span>真相</span></a>
+<a href="#scene-8">第8场 <span>终局</span></a></nav><div class="controls"><button onclick="document.body.classList.toggle('large')">调整字号</button><button onclick="document.body.classList.toggle('dark')">切换深色</button></div></aside><main><h1>赵氏孤儿</h1>
+<p><strong>越剧剧本 · 编剧：余青峰</strong></p>
+<blockquote>
+<p>完整八场剧本 · 角色台词以颜色区分，舞台说明保留原文。</p>
+</blockquote>
+<h2>角色颜色 · 全剧统一</h2>
+<ul><li><span style="color:#1769AA"><strong>程婴</strong></span></li><li><span style="color:#B42345"><strong>程王氏</strong></span></li><li><span style="color:#087E67"><strong>屠岸贾</strong></span></li><li><span style="color:#7541B8"><strong>庄姬</strong></span></li><li><span style="color:#C45313"><strong>程武</strong></span></li><li><span style="color:#A02E83"><strong>韩厥</strong></span></li><li><span style="color:#3C7D22"><strong>公孙杵臼</strong></span></li><li><span style="color:#C32F2F"><strong>赵朔</strong></span></li><li><span style="color:#79531D"><strong>张三忌</strong></span></li><li><span style="color:#007E99"><strong>安儿</strong></span></li><li><span style="color:#505EAB"><strong>众兵士</strong></span></li><li><span style="color:#8B4381"><strong>兵士</strong></span></li><li><span style="color:#1769AA"><strong>三人</strong></span></li><li><span style="color:#B42345"><strong>男子</strong></span></li><li><span style="color:#087E67"><strong>女人</strong></span></li><li><span style="color:#7541B8"><strong>人群</strong></span></li><li><span style="color:#C45313"><strong>二人</strong></span></li><li><span style="color:#A02E83"><strong>所有人</strong></span></li></ul>
+<hr/>
+<p>程  婴——民间草医。</p>
+<p>程王氏——程婴之妻。</p>
+<p>韩  厥——晋国将军。</p>
+<p>公孙杵臼——晋国告老宰辅。</p>
+<p>庄  姬——晋国公主。</p>
+<p>赵  朔——晋国驸马。</p>
+<p>程  武——即赵氏孤儿，其貌酷似赵朔。</p>
+<p>屠岸贾——晋国上卿。</p>
+<p>张三忌——屠岸贾身边的走狗。</p>
+<p>安  儿——庄姬侍女。</p>
+<p>群众、兵士若干。</p>
+<p><a id="scene-1"></a></p>
+<h2>第1场</h2><div class="scene-cast"><div class="scene-cast-title">本场出场角色</div><div class="cast-items"><span class="cast-chip" style="--speaker-color:#505EAB"><span aria-hidden="true" class="cast-dot"></span>众兵士</span><span class="cast-chip" style="--speaker-color:#79531D"><span aria-hidden="true" class="cast-dot"></span>张三忌</span><span class="cast-chip" style="--speaker-color:#087E67"><span aria-hidden="true" class="cast-dot"></span>屠岸贾</span><span class="cast-chip" style="--speaker-color:#C32F2F"><span aria-hidden="true" class="cast-dot"></span>赵朔</span><span class="cast-chip" style="--speaker-color:#7541B8"><span aria-hidden="true" class="cast-dot"></span>庄姬</span><span class="cast-chip" style="--speaker-color:#A02E83"><span aria-hidden="true" class="cast-dot"></span>韩厥</span></div></div>
+<p><em>【幕启。】</em></p>
+<p><em>【《秋风歌》低吟：】</em></p>
+<p>秋风吼，秋雨骤，</p>
+<p>秋叶片片丢。</p>
+<p>秋啊秋，多事秋，</p>
+<p>秋虫阵阵啾。</p>
+<p>人间沧桑道不得，</p>
+<p>只说天凉好个秋。</p>
+<p><em>【刀光斧影，人哭鬼泣，血光映红了天际，尸体堆成了山丘。】</em></p>
+<p><em>【屠岸贾上，眼光扫视这一切，得意地微微一笑，继之疯狂大笑。】</em></p>
+<p><em>【张三忌上。】</em></p>
+<p><em>【众兵士押解赵朔、庄姬上。】</em></p>
+<p class="dialogue" style="--speaker-color:#505EAB"><span style="color:#505EAB"><strong>众兵士：</strong> 走！</span></p>
+<p class="dialogue" style="--speaker-color:#79531D"><span style="color:#79531D"><strong>张三忌：</strong> 赵盾老贼,谋反作乱，身首异处，抛尸荒野；赵氏全家，满门抄斩！</span></p>
+<p class="dialogue" style="--speaker-color:#505EAB"><span style="color:#505EAB"><strong>众兵士：</strong> 满门抄斩！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 赵驸马！你我两家恩仇，一夜之间，灰飞烟灭。不知驸马有何感想？</span></p>
+<p class="dialogue" style="--speaker-color:#C32F2F"><span style="color:#C32F2F"><strong>赵朔：</strong> 呸，奸贼！想我赵家，三代忠良，辅佐灵公，兴国安民。而你，胁持灵公，一手遮天，鱼肉百姓，祸国殃民。我爹劝你改邪归正，你却诬他图谋造反，杀我赵家三百余口。你，这个无恶不作的奸佞，必遭天谴！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （激怒）来呀，将赵朔夫妇碎尸万段！</span></p>
+<p><em>【众兵士纷纷举刀。】</em></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 大胆！我乃晋国公主，谁敢杀我！谁敢杀我！！</span></p>
+<p class="dialogue" style="--speaker-color:#79531D"><span style="color:#79531D"><strong>张三忌：</strong> 屠岸大人，这公主是杀不得哇！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 先将赵朔给我斩了！</span></p>
+<p class="dialogue" style="--speaker-color:#505EAB"><span style="color:#505EAB"><strong>众兵：</strong> 斩！</span></p>
+<p class="dialogue" style="--speaker-color:#C32F2F"><span style="color:#C32F2F"><strong>赵朔：</strong> 公主……</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>公主：</strong> 驸马……</span></p>
+<p class="dialogue" style="--speaker-color:#C32F2F"><span style="color:#C32F2F"><strong>赵朔：</strong> 妻啊！</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>公主：</strong> 夫啊！</span></p>
+<p><em>【庄姬突然腹痛难忍。】</em></p>
+<p class="dialogue" style="--speaker-color:#C32F2F"><span style="color:#C32F2F"><strong>赵朔：</strong> 公主，赵家满门，暴尸街头，如今只剩下你腹中的孩儿！公主啊，若为我生个男儿，就唤作赵氏孤儿！</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 赵氏孤儿！</span></p>
+<p class="dialogue" style="--speaker-color:#C32F2F"><span style="color:#C32F2F"><strong>赵朔：</strong> 只望赵氏孤儿长大成人，报仇雪恨！公主，你、你要保重啊！</span></p>
+<p><em>【屠岸贾一听此言，抽剑刺死赵朔，鲜血飞溅。】</em></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> （一声撕心裂肺的惨叫）天——哪！</span></p>
+<p><em>【屠岸贾用剑直指庄姬。】</em></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> （惊恐地）你要做什么？你不能杀我，你不能杀我！我是晋国公主！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 来呀，将庄姬公主押往驸马府，待产下赵家孽子，我要亲手斩草除根！</span></p>
+<p class="dialogue" style="--speaker-color:#79531D"><span style="color:#79531D"><strong>张三忌：</strong> （心有余悸，对屠岸贾耳语）大人，听说婴儿落地夭亡，必有血光之灾！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 嗯？</span></p>
+<p class="dialogue" style="--speaker-color:#79531D"><span style="color:#79531D"><strong>张三忌：</strong> 怎可因此玷污了您的宏图大业！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 那依你之见呢？</span></p>
+<p class="dialogue" style="--speaker-color:#79531D"><span style="color:#79531D"><strong>张三忌：</strong> 不如等到满月之后，再斩不迟。</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 好！传令下去，将驸马府团团围住，严加把守，就是赵氏孤儿长出翅膀来，也休想飞出府门。</span></p>
+<p class="dialogue" style="--speaker-color:#505EAB"><span style="color:#505EAB"><strong>众兵士：</strong> 是！</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 众兵听着，屠岸大人有令，将驸马府团团围住，进府者多加留意，出府者严加盘查！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 如有疏漏者，斩！</span></p>
+<p class="dialogue" style="--speaker-color:#505EAB"><span style="color:#505EAB"><strong>众兵士：</strong> 斩！斩！斩——</span></p>
+<p><em>【闪电隐隐，雷声隆隆。屠岸贾拭去剑上的血污，其苍白的脸色在闪闪电光下愈加狰狞。】</em></p>
+<a id="scene-2"></a><h2>第2场</h2><div class="scene-cast"><div class="scene-cast-title">本场出场角色</div><div class="cast-items"><span class="cast-chip" style="--speaker-color:#A02E83"><span aria-hidden="true" class="cast-dot"></span>韩厥</span><span class="cast-chip" style="--speaker-color:#505EAB"><span aria-hidden="true" class="cast-dot"></span>众兵士</span><span class="cast-chip" style="--speaker-color:#7541B8"><span aria-hidden="true" class="cast-dot"></span>庄姬</span><span class="cast-chip" style="--speaker-color:#007E99"><span aria-hidden="true" class="cast-dot"></span>安儿</span><span class="cast-chip" style="--speaker-color:#1769AA"><span aria-hidden="true" class="cast-dot"></span>程婴</span></div></div>
+<p><em>【幕后传来一声凄厉的婴儿哭声，预示着庄姬公主的早产。】</em></p>
+<p><em>【驸马府外，韩厥带领众兵士举戟巡逻。】</em></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 众兵听者！</span></p>
+<p class="dialogue" style="--speaker-color:#505EAB"><span style="color:#505EAB"><strong>众兵士：</strong> 有！</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 屠岸大人有令，明日就是赵氏孤儿满月之期，你等要小心把守府门，进府者多加留意，出府者严加盘查！</span></p>
+<p class="dialogue" style="--speaker-color:#505EAB"><span style="color:#505EAB"><strong>众兵士：</strong> 是！</span></p>
+<p><em>【忽明忽暗的月光隐去，又大又急的夜雨袭来。】</em></p>
+<p><em>【驸马府中，庄姬怀抱赵氏孤儿，留连顾盼。】</em></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> （唱）苦命的儿啊！</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">秋夜雨一点一滴皆是愁，</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">更那堪，风声鹤唳在心头。</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">困苦中产下赵家后，</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">来不及欢喜先烦忧。</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">一月来，食难下咽夜难寐，</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">为娇儿终日惶惶倚危楼。</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">儿啊儿，你身无双翼何处投，</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">凶险之地焉能留？</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">今夜未饮满月酒，</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">娘要狠心把你丢。</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">娇儿哭啊，一声声地紧，</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">娘心苦哇，一阵阵地揪！</span></p>
+<p><em>【侍婢安儿上。】</em></p>
+<p class="dialogue" style="--speaker-color:#007E99"><span style="color:#007E99"><strong>安儿：</strong> 公主，程先生来了。</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 程先生来了么？他在哪里，他在哪里？</span></p>
+<p class="dialogue" style="--speaker-color:#007E99"><span style="color:#007E99"><strong>安儿：</strong> 哎，他方才明明跟在我身后，怎么一转眼就不见了？</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> （有点失望）赵家遭难，莫非他也怕受累么……</span></p>
+<p class="dialogue" style="--speaker-color:#007E99"><span style="color:#007E99"><strong>安儿：</strong> （回身寻找）程先生——</span></p>
+<p><em>【程婴身背药箱上。】</em></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （唱）秋风肃杀草木哀，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">程婴我，战战兢兢进府来——</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">祸福衰荣旦夕改，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">可怜赵家灭顶灾！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">是非之地莫久待，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">逗留片时速离开……</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 程婴，你可来了。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 公主唤我前来，想必是产后虚弱，玉体欠安……</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 不是我，是他——（指向赵氏孤儿）</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 哦，原来是小官人！（上前把脉）我看他，脉气通顺，面色红润，好得很，好得很哪！</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 他面色红润，却危在旦夕；他脉气通顺，只怕活不到明日了。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （回避）公主此言，小民费解。既然你们母子安康，我这个草医么，不便久留。告辞告辞！（欲下）</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 程先生哪，我今唤你前来，非是治病，乃是救命！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 救命？！</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 奸贼横行，肆无忌惮，明日满月之期，赵氏孤儿小命难保啊！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 啊！奸贼如此心狠手辣，闻之令人义愤填膺！</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 都道遇急思亲戚，临危托故人，可赵家亲戚已悉数被杀，故人也唯恐避之不及。我思量再三，只有程先生你是可托之人。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 我？</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 程先生啊，平日里，你救死扶伤，仁心仁术，危难之中，万望你能搭救赵氏孤儿！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 我……我身无三头六臂，如何搭救？</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 只要你将孤儿带出府门，便可交与他祖父生前至交公孙大人，抚养之事与你无干。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 哎呀公主，外面武士林立，把守森严，只怕才出府门半步，孤儿便人头落地了。再说，我程婴也有一个与孤儿一般大小的儿子，我抱孤儿出去，落得个身首两分不说，家中妻儿老小，谁来照料？</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> （失望地）是啊，你家中也有妻儿老小。算了，你走吧……</span></p>
+<p><em>【程婴拱手欲下。赵氏孤儿啼哭，其声惨切。】</em></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> （呼号）儿啊，看来你是在劫难逃了！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （驻足）哎呀！</span></p>
+<p><em>（唱）小孤儿，嗷嗷待哺，哀哀啼哭，</em></p>
+<p>不由我，恻隐涌心，怜意切肤……</p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 儿啊，你父临终尚有遗言，要为赵家报仇雪恨。可是为娘虽为公主，却连你的性命都难以保全哪！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （唱）他才降人间，就遭屠戮，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">这小小生灵，何罪何辜？</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 可叹赵家，呕心沥血，上扶君王，下恤黎民，如今竟遭奸贼陷害，落得这般地步。儿啊，千不该，万不该，你不该生在忠良门第啊！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （唱）斯言如锥，刺在心骨，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">满脸羞愧，良知复苏。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">我若是，袖手旁观如陌路，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">算什么仁心仁术的好大夫？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">程婴有心相救助，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">只叹无计来存孤！</span></p>
+<p><em>【程婴思忖，搓手踱步,忽见药箱,计上心头。】</em></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 药箱！（自言自语）将孤儿藏在药箱之中……</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 程先生，你愿意搭救孤儿了？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （惊恐地）啊，我、我、我方才说了什么？</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 你说要将孤儿藏在药箱之中！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 我，说了么？</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 你，说了！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （后退）我，当真说了吗？</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> （进逼）你，当真说了！程先生哪，如今这赵氏孤儿，是死是活，都在你一念之间了啊！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 这、这一念之间么……（猛抬头，一股勇气油然而生）</span></p>
+<p><em>（唱）铤而走险，义无反顾，</em></p>
+<p>莫使医德蒙垢污！</p>
+<p><em>（白）哎呀公主！只好委屈小官人了……（示意将孤儿存放药箱）</em></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 你答应了？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （低头整理药箱）我答应了。</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 你当真答应了？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （慢慢抬起头，郑重地）我当真答应了！</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> （热泪夺眶）我代赵家三百余口惨死的冤魂，叩谢恩公！（跪地叩首）</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （慌乱地）公主，程婴仅是一介草医，微不足道，如此大礼，万难承受哇！快、快将孤儿存放药箱之中，趁着夜色昏暗，或能蒙混出去！</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 好！安儿，你速速赶往太平庄上，求公孙大人前往程先生家中接应，看在两家至交份上，抚养孤儿长大成人。</span></p>
+<p class="dialogue" style="--speaker-color:#007E99"><span style="color:#007E99"><strong>安儿：</strong> 好，我这就去。（急下）</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 快走，快走！</span></p>
+<p><em>【庄姬起身，正要把孤儿放于药箱之际，心碎欲绝。】</em></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 儿啊，在这药箱之中，你千万莫要啼哭啊……</span></p>
+<p><em>【童声独唱：】</em></p>
+<p>月光光，照四方，</p>
+<p>谁家儿郎哭得慌？</p>
+<p>乖乖噜，乖乖哟，</p>
+<p>亲娘怀中入梦乡……</p>
+<p><a id="scene-3"></a></p>
+<h2>第3场</h2><div class="scene-cast"><div class="scene-cast-title">本场出场角色</div><div class="cast-items"><span class="cast-chip" style="--speaker-color:#A02E83"><span aria-hidden="true" class="cast-dot"></span>韩厥</span><span class="cast-chip" style="--speaker-color:#1769AA"><span aria-hidden="true" class="cast-dot"></span>程婴</span><span class="cast-chip" style="--speaker-color:#505EAB"><span aria-hidden="true" class="cast-dot"></span>众兵士</span><span class="cast-chip" style="--speaker-color:#79531D"><span aria-hidden="true" class="cast-dot"></span>张三忌</span><span class="cast-chip" style="--speaker-color:#087E67"><span aria-hidden="true" class="cast-dot"></span>屠岸贾</span><span class="cast-chip" style="--speaker-color:#8B4381"><span aria-hidden="true" class="cast-dot"></span>兵士</span></div></div>
+<p><em>【驸马府外。】</em></p>
+<p><em>【韩厥率领众兵士持刀举戟，穿梭在驸马府周围。】</em></p>
+<p><em>【程婴上，故作镇静，迈开大步欲走。】</em></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> （一声断喝）站着！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 将军，何事？</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 你是什么人？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 我是个民间草医，姓程，名叫程婴。</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 你是从府中出来？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 是公主唤我而来，号脉问病，煎汤下药。</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 你下了什么药？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 哦，是姜母汤，补一补产后体虚。</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 你这个药箱……</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （一惊）这个药箱么……</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 这个药箱中都有些什么？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 都是一些草药。</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 是什么草药？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 有甘草，薄荷，当归，益母……</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> （追问）还有什么？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 还有一枝“人参”。</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 人参？我以为什么宝贝，去吧，去吧。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （暗自捏把汗）如此多谢将军。</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> （对众兵）你等四处搜查，不得有误！</span></p>
+<p class="dialogue" style="--speaker-color:#505EAB"><span style="color:#505EAB"><strong>众兵士：</strong> 是！（下）</span></p>
+<p><em>【程婴背起药箱，正要离开。】</em></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> （又一声断喝）回来！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （踉跄）将、将军，还有什么事不成？</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 屠岸大人有令在先，不搜进府的，只搜出府的。末将为了例行公事，还是要好好地搜一搜！</span></p>
+<p><em>【程婴下意识地抱紧药箱。】</em></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 这个药箱，你不是背着，而是抱着，爱护得很嘛。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 这乃是行医人的饭碗，不爱护不行哪。</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 要爱护？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 要爱护。</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 哼哼哼！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 嘿嘿嘿！</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> （旁唱）他神色慌张，言语敷衍，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （旁唱）他盘问再三，箭在弓弦。</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> （旁唱）我料定药箱有疑点，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （旁唱）我只怕破绽现眼前。</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> （旁唱）观此人，眉慈目也善，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （旁唱）且镇定，神色自悠闲。</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> （旁唱）谅他无有包天胆，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （旁唱）暂把药箱放一边！</span></p>
+<p><em>（自言自语）嘿，不就是一个药箱嘛！此药箱么，就当作一个见面礼，奉送将军……</em></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> （怀疑地）奉送给我？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 日后若有个伤风杂症，还可应急……</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 谁稀罕你的药箱？（一挥手）算了，你走吧！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （又捏了一把汗）怎么，将军看不上？也是，送礼哪有送药的？送药不吉利嘛！小民这就告辞，告辞！（背起药箱欲下）</span></p>
+<p><em>【韩厥察言观色，疑窦又生，喝住程婴。】</em></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 程婴，你道药箱中有些什么？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （已然虚脱）甘、甘、甘草，薄荷……</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 还有一枝人参！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 对，对。人参！人参！</span></p>
+<p><em>【韩厥抢过药箱，揭开盖子。】</em></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 啊！赵氏孤儿……</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （瘫倒）完了，一切都完了！</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> （拔剑而出）程婴，你的胆儿不小哇！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （泪流满面）天哪，我程婴上辈子造下了什么孽啊，致今日招来断头之祸、灭门之灾……</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 哼哼，你既知这断头之祸、灭门之灾，又为何甘冒凶险，引颈待刎！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 将军哪，将军！且听小人一言，再杀再剐不迟。</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 有话快说！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 小民本是草泽医生，平素安分守己，从不惹是生非。都只道，天有好生之德，人有恻隐之心，更何况救死扶伤乃医者本份！面对这赵家独苗，小小生灵，怎能不怜，焉能不救？将军啊，你可知，那庄姬公主，眼睁睁目睹夫君饮剑身亡却无能救助，悲切切断送儿子深夜流亡却空自洒泪。似这等夫妻死别，骨肉生离，怎不令人侧目断肠！君不见，这赵家的独苗，他藏身药箱，手脚难展，汗湿额头，闷气难喘。天哪，苍天哪！这小小的生灵，他有何罪，他有何辜，他、他、他还未满月啊！</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> （震惊）这还未满月么！</span></p>
+<p><em>（唱）听他一席肺腑言，</em></p>
+<p>引我一番泪暗弹。</p>
+<p>小小草医惊天胆，</p>
+<p>满腔正气喷如兰！</p>
+<p>奸贼行径令人厌，</p>
+<p>胡作非为忒凶残。</p>
+<p>我怎能，助纣为虐丧天良，</p>
+<p>我怎能，正邪不分陷泥潭？</p>
+<p>俯首再把孤儿看，</p>
+<p>越看越怜越羞惭。</p>
+<p>我若献孤图富贵，</p>
+<p>双手沾血洗不干。</p>
+<p>堂堂七尺男儿汉，</p>
+<p>敢作敢为敢承担。</p>
+<p>升官晋爵何所恋，</p>
+<p>昧心功劳我不贪！</p>
+<p><em>（一摆手）程婴，你快走吧！</em></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （意外地）啊，你让我走？</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 休得罗嗦，快走！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 我走，我走！（扭头就走）</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 回来！你怎么连药箱都不要了？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 什么，你让我带走药箱？我，不走了！</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 啊，为何又不走？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 不走了！走出去也是死路一条，不如坐以待毙。</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 此话怎讲？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 我这前脚一走，你随后便报与屠岸贾知道，正好邀功请赏、升官晋爵。你以为我看不透你的心思？</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 哈哈哈，不愧是行医之人，不但能看病，还能看心。不过，这一次你看错了！这世上，人伦遭践，邪气横流，而我一个热血男儿，岂能视而不见，见而不救？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （情不自禁）好！将军大义凛然，令人肃然起敬！</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 我再问你，你为赵氏存遗孤，我与屠岸有何亲！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 你当真要放走赵氏孤儿？</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 当真！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 不假？</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 不假！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 那我就走！</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 且慢，这里有腰牌一块，你且带上，若遇盘查，它可保你顺利出府！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （接过腰牌）多谢将军！</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 趁眼前无人，要走快走！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 我走，我走！（抱起药箱，转身就走，刚走两步又转回）</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 你还回来作甚？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 将军哪，我这一走，你在屠岸贾面前怎生交代？</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 你走你的，休管许多，韩厥我一人做事一人当！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 可是我这一走，将军你无端受罪，性命不保啊！</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> （后退数步）这……也罢！</span></p>
+<p><em>（念）草木一秋枯与荣，</em></p>
+<p>人生一世轻与重。</p>
+<p>愿将碧血洗疮痍，</p>
+<p>身后万事都成空！</p>
+<p><em>（白）程婴快快闪开，那厢有人来了！（趁程婴转身，毅然拔剑自刎）</em></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 韩——将——军——哪！</span></p>
+<p><em>【程婴抹着眼泪，急忙背起药箱，一步三回头地下。】</em></p>
+<p><em>【张三忌引屠岸贾急上。】</em></p>
+<p class="dialogue" style="--speaker-color:#79531D"><span style="color:#79531D"><strong>张三忌：</strong> 大人，韩厥已死！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 韩厥自刎，定有变故！</span></p>
+<p><em>【一兵士急上。】</em></p>
+<p class="dialogue" style="--speaker-color:#8B4381"><span style="color:#8B4381"><strong>兵士：</strong> 启禀大人，赵氏孤儿突然不见了！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 啊？不见了？难道飞上了天、钻入了地不成？哼哼，就是上天入地，我也要把他硬抠出来！</span></p>
+<p class="dialogue" style="--speaker-color:#79531D"><span style="color:#79531D"><strong>张三忌：</strong> 还不四处搜查！</span></p>
+<p class="dialogue" style="--speaker-color:#8B4381"><span style="color:#8B4381"><strong>兵士：</strong> 是！（下）</span></p>
+<p class="dialogue" style="--speaker-color:#79531D"><span style="color:#79531D"><strong>张三忌：</strong> 大人，赵氏孤儿要是流落民间，后患无穷哪！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （咆哮着）谁吃了豹子胆，敢收留赵氏孤儿，我叫他断子绝孙……</span></p>
+<p><a id="scene-4"></a></p>
+<h2>第4场</h2><div class="scene-cast"><div class="scene-cast-title">本场出场角色</div><div class="cast-items"><span class="cast-chip" style="--speaker-color:#B42345"><span aria-hidden="true" class="cast-dot"></span>程王氏</span><span class="cast-chip" style="--speaker-color:#1769AA"><span aria-hidden="true" class="cast-dot"></span>程婴</span><span class="cast-chip" style="--speaker-color:#3C7D22"><span aria-hidden="true" class="cast-dot"></span>公孙杵臼</span><span class="cast-chip" style="--speaker-color:#1769AA"><span aria-hidden="true" class="cast-dot"></span>三人</span><span class="cast-chip" style="--speaker-color:#7541B8"><span aria-hidden="true" class="cast-dot"></span>庄姬</span><span class="cast-chip" style="--speaker-color:#A02E83"><span aria-hidden="true" class="cast-dot"></span>韩厥</span></div></div>
+<p><em>【天刚放晓，程婴家中。】</em></p>
+<p><em>【程王氏怀抱婴儿上，哼唱“月光光”儿歌。】</em></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （唱）乖乖今天刚满月，</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345">你爹出诊未归来。</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345">为娘一夜未合眼，</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345">月黑等到曙色开。</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345">人迹渺渺柴门外，</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345">栖乌频叫声声哀。</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345">莫非有何凶险事，</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345">思来想去费疑猜……</span></p>
+<p><em>【程婴怀抱药箱，气喘吁吁遮掩而上。】</em></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 相公，你可回来了，快把药箱放下。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 夫人，快、快给他喂奶！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 刚刚喂过，他已经睡着了！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 夫人，我说的是他——（从药箱中抱出孤儿）</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （喜滋滋地接过赵氏孤儿）哎哟哟，也是一个可爱的宝宝。我说相公，自家的儿子刚刚满月，你又从什么地方捡来一个？</span></p>
+<p><em>【躺在摇篮中的婴儿啼哭。】</em></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 哟，还挺小气的，娘刚抱着这位小哥哥，你就不高兴哪？莫哭，莫哭，这位小哥哥好生可怜哩。相公，你既然抱养了一个孩子，为什么不光明正大抱回家，却把他藏在药箱之中？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 夫人哪，这孩子不是路边捡来的，更不是抱养来的！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 那他是从哪里来的？从天上掉下来的？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 乃是受人重托，历尽千辛万险，好不容易带了回来！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 不管你是从什么地方带来的，反正我刚生完孩子，有的是奶水。从今往后，对外就说是一对双胞胎，我左边一个，右边一个，把他们兄弟俩养得白白胖胖！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 夫人不知，这个孩子不是别人，乃是忠良之后！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 忠良之后？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 他就是满门被斩、性命不保的赵氏孤儿！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （不知所措）赵氏孤儿……你、你、你这是惹祸进门哪！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 夫人放心，公主只托我带出孤儿，她已派人前往太平庄，告知公孙大人，让他前来领养，这样，我一家便可平安无事了。</span></p>
+<p><em>【公孙杵臼内唱“赵家不幸实可叹——”，颤巍巍地上。】</em></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 门外似有动静！</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> （接唱）朝政昏聩徒心寒。</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22">本是告老隐居人，</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22">挂念孤儿危与安。</span></p>
+<p><em>（叩门，白）程郎中在家吗？</em></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （警觉地）何人？</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 是一个求医问药的老汉。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 从何处而来？</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 太、平、庄。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （方才开门）公孙大人，快快请进。</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 孤儿在哪里，赵氏孤儿在哪里？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 孤儿在此。</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> （接过赵氏孤儿，一声喟叹）真是天无绝人之路啊！赵驸马，你在天有灵，可以瞑目了。老夫这就将他抱回，尽心尽力抚养成人！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 老大人，我替公主，多谢您了！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （欣喜地）苍天有眼，总算有了好归宿！</span></p>
+<p><em>【公孙抱赵氏孤儿正要出门，忽传来沉闷的鸣锣吆喝：“各家各户听着，灵公有旨，三日之内，谁若收留赵氏孤儿不献，全国上下，凡与孤儿一般大小者，斩尽杀绝！”】</em></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 全国上下，凡与孤儿一般大小者，斩尽杀绝！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 好一个昏庸无道的灵公！</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 这哪里是灵公的旨意，分明是屠岸贾这个老贼，心狠手辣，一手操纵！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 好一个灭绝人性的老贼！</span></p>
+<p><em>【又传来沉闷的鸣锣吆喝。程婴夫妇本能地把目光投向熟睡中的儿子。】</em></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 相公，难道连我们的小宝宝也难逃劫难吗？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 原以为救下一个婴儿，想不到啊，想不到殃及了全国百姓！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （忍不住低低饮泣）相公哪，你、你可做了一件天大的好事啊！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （唱）她无助伤神情难禁，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">我心中，一团乱麻理不清。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">救孤大祸我招惹，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">连累亲人愧疚深！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>三人：</strong> （唱）怕怕怕，时不我待三日后，</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （唱）雏燕断哺独哀鸣；</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> （唱）赵氏孤儿命归阴；</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （唱）天下婴孩染血腥！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">倘若不把孤儿献，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">殃及多少好家庭。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">倘若不把孤儿献，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">全家相聚在泉林。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">看起来，惟有下策献孤儿，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">方能够，化险为夷保安宁——</span></p>
+<p><em>【程王氏、公孙都把目光投向程婴。】</em></p>
+<p><em>【舞台深处出现庄姬跪地哀求的场面。】</em></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 程先生哪，如今这赵氏孤儿，是死是活，都在你一念之间了啊！（隐去）</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （摇头）不可，不可哪！</span></p>
+<p><em>（唱）公主托孤愁欲绝，</em></p>
+<p>君子一诺重千斤。</p>
+<p>我岂可，临危变卦失主见，</p>
+<p>又怎能，背信弃义卖良心？</p>
+<p><em>【舞台深处出现韩厥自刎的剪影。】</em></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>韩厥：</strong> 这世上，人伦遭践，邪气横流，而我一个热血男儿，岂能视而不见，见而不救？（隐去）</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （呼唤）韩将军，韩将军哪——</span></p>
+<p><em>（唱）舍生忘死韩将军，</em></p>
+<p>大义光耀日月明。</p>
+<p>若献孤，热血男儿白送命，</p>
+<p>怎告慰，回肠荡气在天灵？</p>
+<p>更惦念，赵家爱民恩泽广，</p>
+<p>三代为官如水清。</p>
+<p>这忠良的骨血应留存啊，</p>
+<p>应留存，人间正气不灭薪！</p>
+<p><em>（白）赵氏孤儿不能献，赵氏孤儿不能献啊！</em></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 赵氏孤儿不能献，难道就让我们的儿子等死不成么？难道让天下的父母终日凄惶么？相公啊，你、你这个祸闯大了！</span></p>
+<p><em>【摇篮中程婴的儿子啼哭。】</em></p>
+<p><em>【程婴看见自己的儿子，猛然心弦一颤。】</em></p>
+<p><em>【程王氏突然意识到什么，抢先把儿子搂在怀里。】</em></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 夫人，让我来抱一抱儿子，好吗？</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （一种母性的本能）不，不许碰我的儿子！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 夫人，我是孩子的亲爹啊！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 咳，我这是怎么了，疑神疑鬼的……（哄着婴儿）宝宝莫哭，让爹来抱一抱，亲一亲！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （接过婴儿，顿觉一片茫然）我的娇儿哪！</span></p>
+<p><em>（唱）小小脸蛋红扑扑，</em></p>
+<p>闪闪双眼亮晶晶。</p>
+<p>越看越怜情何忍，</p>
+<p>越思越想泪沾襟。</p>
+<p>怎能断香烟，</p>
+<p>如何下狠心？</p>
+<p><em>【外面，催人的鸣锣吆喝声又起：“各家各户听着，灵公有旨，三日之内，谁若收留赵氏孤儿不献，全国上下，凡与孤儿一般大小者，斩尽杀绝！”】</em></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> （一声长叹）唉，看来赵氏孤儿是死路一条，忠良绝后啊！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （坚定地）不，忠良不会绝后，我答应过庄姬公主，答应过韩厥将军，赵氏孤儿我是救定了！</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 你想救，怎么救？难道要全国的婴儿都被斩尽杀绝吗？</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 连你自己的孩子也不能幸免吗？</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 屠岸贾这种人是什么事情都做得出来呀！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 罢罢罢！我有一个两全之策，既救下赵氏孤儿，又保全晋国婴孩。我，我要舍弃我儿，替换赵氏孤儿！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （惊诧）什么，你说什么？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 还望老大人前往举报，我程婴甘愿与我儿一同赴义！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （悲愤难忍）你——你这个没有心肺之人哪！</span></p>
+<p><em>（唱）太荒唐，太残忍，</em></p>
+<p>太狠心，太绝情。</p>
+<p>人道虎毒不食子，</p>
+<p>你比猛兽凶三分！</p>
+<p>天伦乐，全抛弃，</p>
+<p>骨肉情，都看轻。</p>
+<p>自断程家独根苗，</p>
+<p>愧对祖宗负神灵。</p>
+<p>气难忍哪，骂不停，</p>
+<p>我要与你把命拼——</p>
+<p><em>【程婴任凭程王氏的拳头雨点一般捶在身上，默默忍受，无语泪流。】</em></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> （断喝）不要打了！你这样打他骂他，徒有何益？到头来，赵氏孤儿得死，全国上下的满月婴儿得死，连你们的宝贝儿子也保不住啊！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （闻言，冷静了）可是，只要我还有一口气，我就不能让我的孩子白白送死啊……不如我们一家三口，隐姓埋名，远走他乡！（紧紧拽住程婴）对，隐姓埋名，远走他乡！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 我若是一走了之，任凭全国婴儿惨遭屠戮，从此天下纷乱，永无宁日！我程婴纵然苟活世上，一颗心也就永沉地狱了。夫人，我不能走，不能走啊！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （绝望了）哼哼，哼哼哼，看来你是铁了心，绝了情……</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （扑通跪地）夫人——</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （低头看着怀里的孩子）我的儿啊……</span></p>
+<p><em>【程婴跪地不起，悲恸怆然。程王氏踉跄着走向舞台深处。】</em></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> （扶起程婴）程老弟呀，你这么做，真是要折了老夫的阳寿啊！</span></p>
+<p><em>【程婴抬头，眼神恍惚。】</em></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 老夫这一辈子呀，混迹朝堂三十多年，却是庸庸碌碌，无所作为。如今告老退隐，散淡悠闲，又怎能过一天算一天，等着入土？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 老大人，你何出此言哪！</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 与其寿终正寝，不如趁着现在还有一口气，做一件轰轰烈烈、痛痛快快的事！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （起身）怎么，老大人不愿意抚养孤儿吗？</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 老弟你为了搭救孤儿，连亲生骨肉都能舍得，而老夫这一把老骨头了，还有什么不愿意呢？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 那老大人之意是？</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 嘿嘿，我都七老八十的人了，再抚养着一个刚刚满月的儿子，人家必定会问，“哎哟，都这把年纪了，还能生个儿子，真有能耐！”吾将何言以对？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 这个么……</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 我且问你，赵氏孤儿长大成人还要多少年？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 至少也要十几年。</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 对呀，十几年，老夫还能活到九十多岁吗？看来这抚养孤儿之事，还是你最适合。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 我抚养孤儿，那谁去举报呢？</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 也是你呀！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 我？</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 哎呀老弟，你真笨！</span></p>
+<p><em>（唱）你正壮年日方长，</em></p>
+<p>我似西风吹斜阳。</p>
+<p>你既舍子我舍命，</p>
+<p>舍子舍命为忠良。</p>
+<p>你把孤儿来抚养，</p>
+<p>长大成人任飞翔。</p>
+<p>我去黄泉探老友，</p>
+<p>煮茶饮酒拉家常。</p>
+<p>醉酣野叟踏歌来，</p>
+<p>笑看人间菊花黄！</p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 老大人，这万万不妥啊……</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 有什么不妥？老弟，你应该成全我才是呀！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 大人哪，程婴我断送亲生骨肉，自是万念俱灰，也想一死了之啊！</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 人固有一死，可是我死了是一种解脱，你死了，你能解脱得了吗？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 大人，我……</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 你那肝肠寸断的妻子，从此无依无靠，终日以泪洗面，你忍心吗？你千辛万苦救下的孤儿，谁来抚养，谁来疼爱，你放心吗？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 我不忍心，我不放心。可是，让你这个年迈苍苍的老人去受刑送命，程婴更不能下此狠心哪……</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> （生气地）你这个人怎么这样死心眼？我只问你一句话，是死容易，还是抚养孤儿容易？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 当然是死容易！</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 你都知道死更容易，为什么还要把那难做之事，让我这个老头子去做呢？说白了，我走过的桥，比你走过的路还多。眼下等着我的只是一座奈何桥，程老弟，等着你的可是漫漫长路啊！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （潸然泪下）老大人……</span></p>
+<p><em>【舞台深处的程王氏也慢慢转过身来，泪光闪烁。】</em></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 程婴，我为什么要留下你，就是为了让你们夫妇再生一个儿子。（大声、发自肺腑地）好人是不能绝后的！</span></p>
+<p><em>【程王氏动容了，慢慢地替两个婴儿换好服装。】</em></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 老大人，你把孩子抱走吧！</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> （泪流满面）程夫人……</span></p>
+<p><em>【公孙杵臼凄然，把婴儿紧紧搂在怀中。】</em></p>
+<p><em>【舞台上只剩下程婴一人，他怀着满心的苍凉和悲哀，步履沉重，走向前台。】</em></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （声嘶力竭地）屠岸大人哪！小民程婴，特来举报，赵氏孤儿藏身太平庄——</span></p>
+<p><a id="scene-5"></a></p>
+<h2>第5场</h2><div class="scene-cast"><div class="scene-cast-title">本场出场角色</div><div class="cast-items"><span class="cast-chip" style="--speaker-color:#087E67"><span aria-hidden="true" class="cast-dot"></span>屠岸贾</span><span class="cast-chip" style="--speaker-color:#1769AA"><span aria-hidden="true" class="cast-dot"></span>程婴</span><span class="cast-chip" style="--speaker-color:#79531D"><span aria-hidden="true" class="cast-dot"></span>张三忌</span><span class="cast-chip" style="--speaker-color:#3C7D22"><span aria-hidden="true" class="cast-dot"></span>公孙杵臼</span><span class="cast-chip" style="--speaker-color:#8B4381"><span aria-hidden="true" class="cast-dot"></span>兵士</span><span class="cast-chip" style="--speaker-color:#B42345"><span aria-hidden="true" class="cast-dot"></span>程王氏</span><span class="cast-chip" style="--speaker-color:#B42345"><span aria-hidden="true" class="cast-dot"></span>男子</span><span class="cast-chip" style="--speaker-color:#087E67"><span aria-hidden="true" class="cast-dot"></span>女人</span><span class="cast-chip" style="--speaker-color:#7541B8"><span aria-hidden="true" class="cast-dot"></span>人群</span></div></div>
+<p><em>【后台灯亮。刑场。】</em></p>
+<p><em>【屠岸贾居高临下，张三忌一旁伺候，众兵士举刀竖戟。】</em></p>
+<p><em>【许多年轻夫妇怀抱婴儿，惴惴不安。】</em></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 程婴，你怎么知道赵氏孤儿的下落？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 大人，小民只好一五一十都招了！前夜，公主唤我前往看病，谁知她却让我带走赵氏孤儿……</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 啊，赵氏孤儿竟然是你带走的！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 公主逼我将赵氏孤儿带到太平庄上，交给公孙大人抚养，我一切照办。回家途中，听到灵公圣旨，便十分害怕。</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 你怕什么？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 只因小民家中也有一个满月小儿，为避免杀身之祸，灭顶之灾，小民就向大人举报来了！</span></p>
+<p><em>【围观群众一片哗然。】</em></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 我说嘛，谁不爱惜自己的亲骨肉呢？程婴，看来你倒是一个诚实之人！</span></p>
+<p><em>【张三忌领兵押解公孙杵臼上。】</em></p>
+<p class="dialogue" style="--speaker-color:#79531D"><span style="color:#79531D"><strong>张三忌：</strong> 启禀大人，公孙大人“请”到了！</span></p>
+<p><em>【公孙杵臼与程婴打一照面，心照不宣。】</em></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 老大人，多年不见，贵体无恙？</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 屠岸大人，唤我来此，有何贵干？</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 你我多年同朝为官，就开门见山吧。听说赵氏孤儿藏在贵府？</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 绝无此事！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 你不肯说，这位郎中可都替你说了。</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 啊！程婴，原来是你前来举报，你、你这个卑鄙小人！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 人不为己，天诛地灭。老大人，我这也是没办法的呀！</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 呀呀呸！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 老匹夫，快快供出赵氏孤儿藏在何处，免得你这把老骨头，生受皮肉之苦！</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 嘿嘿，既然只剩下老骨头了，不妨受一受皮肉之苦，或许还能强身健骨哩。</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 在朝时你多嘴，告老后还嘴硬，真是本性不改。你以为老夫会手下留情？</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 从不苛求。</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 那我就不客气啦！</span></p>
+<p class="dialogue" style="--speaker-color:#79531D"><span style="color:#79531D"><strong>张三忌：</strong> （会意）给我打！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 谁要你们打！程郎中，既然这个老匹夫拒不说出孤儿去向，只好劳驾你帮老夫拷问一番！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （始料未及）大人，这个恐怕不合适吧？</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 怎么，你心疼他么？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 大人，草民好心好意前来举报，谁知竟引来这般猜疑，真让人左右为难！</span></p>
+<p class="dialogue" style="--speaker-color:#79531D"><span style="color:#79531D"><strong>张三忌：</strong> 程郎中，此乃屠大人抬举你。这样的美差，我等还求之不得呢！</span></p>
+<p><em>【兵士递上一根刑棍。】</em></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （目睹刑棍，惊惶失措）这……这……</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 因何不打？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 大人哪，小民是个草泽医生，从来不曾动手打人哪！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 这么说来，你是没有这个胆量？</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 哈哈哈……程婴贼子！你连这个胆量都没有，还敢来举报？（激将）别装作什么慈悲心肠了。来吧，一棍子打死我吧，让我痛痛快快地死吧！</span></p>
+<p><em>【程婴接过刑棍，双手颤抖不已。】</em></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> 你这个无耻之尤，原来也是个懦夫！好啊，你不打我，我来打你，我要和你拼个鱼死网破！</span></p>
+<p><em>【公孙逼近程婴，被张三忌拖开，程婴慌乱，公孙重重地摔在地上。】</em></p>
+<p class="dialogue" style="--speaker-color:#79531D"><span style="color:#79531D"><strong>张三忌：</strong> 程婴，你倒是打呀！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （唱）强忍辛酸泪涟涟，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">咬紧牙关避猜嫌……（举棍欲打，一触及公孙的眼神又难以下手）</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> （唱）快动手，莫犹豫啊，</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22">我无怨无悔上西天！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （唱）不能打，打不得哇，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">他须发苍苍风烛年！（暗自挥泪）</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> （唱）我百般激将，他无动于衷，</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22">我热血未流，他悲泪先咽。（挣扎着站起来）</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （唱）我此时啊，六神无主三魂断，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">活活把人逼疯癫！</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> （唱）我一刻弥留，他行将露馅，</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22">我一息尚存，他倍受熬煎。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （唱）苍天何苦折磨人，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">秋风瑟瑟亦无言！</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22"><strong>公孙：</strong> （唱）看起来，唯我一死能脱险，</span></p>
+<p class="dialogue" style="--speaker-color:#3C7D22"><span style="color:#3C7D22">且莫使，救孤大计化云烟！</span></p>
+<p><em>（破口大骂）老贼！</em></p>
+<p>残害忠良狰狞现，</p>
+<p>灭绝人性罪万千。</p>
+<p>有朝一日天眼开，</p>
+<p>我看你，身首异处，葬无墓田！</p>
+<p><em>（大喊一声）老贼！我和你拼了！</em></p>
+<p><em>【公孙杵臼一头向屠岸贾撞去，屠岸贾挥剑刺死公孙。】</em></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （呆若木鸡，继而悲痛欲绝）老大人……</span></p>
+<p><em>【兵士抱程婴的儿子上。】</em></p>
+<p class="dialogue" style="--speaker-color:#8B4381"><span style="color:#8B4381"><strong>兵士：</strong> 启禀大人，果然从太平庄上搜出了赵氏孤儿！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 搜出了赵氏孤儿？！</span></p>
+<p class="dialogue" style="--speaker-color:#8B4381"><span style="color:#8B4381"><strong>兵士：</strong> 赵氏孤儿已经擒拿归案！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （狂喜）哈哈，哈哈哈！（接过婴儿）</span></p>
+<p><em>【程王氏怀抱赵氏孤儿，猛然窜上。】</em></p>
+<p><em>【程婴眼疾手快，紧紧拉住程王氏。】</em></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 赵家终于斩尽杀绝了，屠某再无后顾之忧了！（高高举起婴儿）</span></p>
+<p><em>【此时，舞台上出现类似电影中的“慢镜头”。在屠岸贾高举婴儿的一刹那，程王氏本能地、奋不顾身地扑向自己的孩子，程婴一把扯住妻子不放，程王氏跌倒。】</em></p>
+<p><em>【屠岸贾狞笑着把婴儿重重地摔在地上。】</em></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （声嘶力竭地）啊——</span></p>
+<p><em>【程婴一手接过程王氏怀中的婴儿，一手紧紧捂住妻子的嘴。程王氏眼睁睁地看着自己的儿子被活活摔死，晕倒在地，不省人事。】</em></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （指着程王氏）她是何人？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （惊魂未定）是、是、是贱内。</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （略有所觉）何以这样惊惶失措？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （搪塞）妇道人家，见不得这种场面。</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 唔？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （掩饰）没什么！啊，恭喜大人，贺喜大人，总算除去了心腹之患！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 程婴，这一回，你真个是功劳簿上第一人，老夫重重有赏。说吧，想当官不？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 不不，我不当官。</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 那就赏你黄金百两。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 不不，我也不要黄金。</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 那你到底想要什么，美女还是良田？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 不不，我什么都不要，我只想保全自己的儿子。</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 这倒是人之常情。程婴，把你的儿子抱过来，让我好生瞧瞧！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （猝不及防，冷汗直冒）大人，大人……</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 你这个郎中呀，就是胆小。老夫又不是老虎，不会吞吃了你儿子……（从程婴手中接过婴儿）呵呵，好一个胖小子，印堂发亮，两眼有神。程婴，念你举报有功，老夫就收你儿子作为义子！从今往后，你就是我府上的门客，你的儿子便是我的儿子……</span></p>
+<p><em>【赵氏孤儿啼哭，屠岸贾搂着哄着，俨然一个慈祥的父亲。】</em></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 老夫有儿子啦！老夫有儿子啦！哈哈哈……</span></p>
+<p><em>【屠岸贾抱着赵氏孤儿离去，留下惊魂未定的程婴夫妇。】</em></p>
+<p><em>【程王氏悠悠醒转。她目光迷离，满台飞奔，似乎在寻找儿子的踪影。】</em></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 我的儿啊——我的儿啊——（重重摔倒地上）</span></p>
+<p><em>【程婴无言以慰，神情恍惚。】</em></p>
+<p><em>【“啊……”无字歌声哼鸣。】</em></p>
+<p><em>【人群围拢过来，指着程婴夫妇唾骂。】</em></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>男子：</strong> 程婴，你背信弃义，卑鄙无耻！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>女人：</strong> 程婴，你卖孤求荣，电打雷劈！</span></p>
+<p><em>【几个男子又向程婴投掷臭鸡蛋，而几个女人则向程王氏吐唾沫。】</em></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>人群：</strong> 程婴，你丧尽天良，人神共怒，不得好死！</span></p>
+<p><em>【骂声铺天盖地。程婴夫妇掩耳抱头，几近崩溃。】</em></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （仰天疾呼）苍天哪——</span></p>
+<p><em>【灯暗。】</em></p>
+<p><em>【黑夜降临了，一弯新月垂挂天边。】</em></p>
+<p><em>【衣衫破损、眼神呆滞的程婴，漫无目的地走着，走着……】</em></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （唱）夜沉沉，风悚悚，冷月如弯钩，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">人寂寂，心寥寥，寒霜压满头。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">黄叶飘，北雁归，安得旧巢在？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">繁星移，流云走，何处可停留。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">万家灯火，阴霾不再有，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">芸芸众生，天伦乐悠悠。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">我此时，俨然阶下囚，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">我今夜，恰似孤魂游。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">叹人生多变命多舛，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">叹世间好景不长久。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">便有千般委屈凭谁诉，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">从此茫茫苦海独泛舟……</span></p>
+<p><em>【程王氏踱上，眼神迷离。】</em></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （发现妻子，极力掩饰）啊，夫人，你怎么跑出来了？你昨夜还烧得厉害，应该好好静养几日。（心疼地）夫人，你一定要好好活着，好好活着，只有这样，我的心里才会好受些……</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （木讷地）这几天，我彷佛经历了一辈子，一辈子的苦难都受尽了，一辈子的泪水都流干了。我已经死过一回了！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 夫人……</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 相公，你现在是我唯一的亲人了。你也要好好活着，我们都要好好活着！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （哽咽）夫、人——我、我真想一死了之、一了百了啊！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 我知道你心里的苦……</span></p>
+<p><em>【程婴像个孩子一样，投入程王氏的怀抱，失声抽泣。】</em></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （默默地抚摸着程婴）你看，你的衣衫破了，你的脸颊脏了，还有，你的头发一下子白了！可是，你的一颗心，千万不能碎了啊！</span></p>
+<p><em>（唱）你若心碎，为妻何所靠，</em></p>
+<p>你若心碎，孤儿何所依？</p>
+<p>世上冷眼何其多，</p>
+<p>谁识其中是与非？</p>
+<p>从此啊，长夜漫漫，星月黯黯，</p>
+<p>血泪凄凄，冷雨淅淅。</p>
+<p>夫啊夫，你要咬紧牙关挺过去，</p>
+<p>切莫一蹶不振病不起。</p>
+<p>雨过天晴总有时，</p>
+<p>报仇雪恨亦可期！</p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （倍感欣慰）夫人，我的贤妻——</span></p>
+<p><em>【夫妻二人相拥而泣。】</em></p>
+<p><em>【此时，远处似乎传来赵氏孤儿的啼哭声。】</em></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 孤儿哭了，孤儿饿了，我要给他喂奶！</span></p>
+<p><em>【夫妻俩相依相偎，沉浸在一种难得的温情中。】</em></p>
+<p><a id="scene-6"></a></p>
+<h2>第6场</h2><div class="scene-cast"><div class="scene-cast-title">本场出场角色</div><div class="cast-items"><span class="cast-chip" style="--speaker-color:#C45313"><span aria-hidden="true" class="cast-dot"></span>程武</span><span class="cast-chip" style="--speaker-color:#087E67"><span aria-hidden="true" class="cast-dot"></span>屠岸贾</span><span class="cast-chip" style="--speaker-color:#79531D"><span aria-hidden="true" class="cast-dot"></span>张三忌</span><span class="cast-chip" style="--speaker-color:#7541B8"><span aria-hidden="true" class="cast-dot"></span>庄姬</span><span class="cast-chip" style="--speaker-color:#007E99"><span aria-hidden="true" class="cast-dot"></span>安儿</span></div></div>
+<p><em>【字幕：十六年后。】</em></p>
+<p><em>【山林猎场。十六岁的英俊少年程武持弓箭上。】</em></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> （唱）旌旗猎猎雄风舞，</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313">秋阳艳艳金菊香。</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313">练就了，一身本领，棍棒刀枪，</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313">长成了，伟岸少年，神采飞扬！</span></p>
+<p><em>【须发皆白的屠岸贾上，张三忌随上。】</em></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （唱）新君登基我赋闲，</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67">踏秋射猎消枯肠。</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67">十六年，耀武扬威，高高在上，</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67">忽然间，穷途迟暮，难料下场……</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 义父，孩儿扶着您，慢慢走！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 不用扶，为父还没老。</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 义父呀，这每天日出日落，每年四季轮回，这人呀，也一定会慢慢变老的……</span></p>
+<p><em>【程武正说着，屠岸贾突然脚下一绊，差点摔倒，被张三忌扶住。】</em></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> （一惊）义父，您不要紧吧？</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 哎唷，眼也花了，腿也硬了，腰也闪了，看来呀，为父是有点老了……</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> （扶屠岸贾坐在一块石板上）来，孩儿给您揉揉肩，捶捶背！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （感慨地）有个儿子，就是好哇！武儿，要是哪一天，为父走不动了，你会不会舍我而去？</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 义父说哪里话来，孩儿定当端汤送药，服侍膝下！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 要是哪一天，有人要杀了为父呢？</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 好义父，只要不做亏心事，怎么会有人杀你呢？</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （自语）哦，只要不做亏心事……</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 再说，万一有人要杀义父，孩儿定当挺身相护！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （动情地）好儿子，为父没有白养你十六年哪！</span></p>
+<p><em>【一行秋雁掠过长空，声声鸣叫。】</em></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 义父，快看，一行秋雁！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 拿弓箭来！（一箭射出，却落了空）唉，老了，真的老了……</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 义父，看我的！（一箭射出，秋雁发出一声哀鸣）</span></p>
+<p class="dialogue" style="--speaker-color:#79531D"><span style="color:#79531D"><strong>张三忌：</strong> 中了，中了！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （微笑着赞叹）好，好箭！果然是后生可畏……（从张三忌手中接过宝剑）武儿，这把宝剑伴随为父三十年，今日相赠与你，但愿你承继为父衣钵，来日笑傲苍穹——</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> （接剑）多谢义父！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 哈哈哈！（下，张三忌随下）</span></p>
+<p><em>【中年的庄姬公主上。】</em></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> （唱）聊度残生居深山，</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">秋风秋雨十六年。</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">往事如烟又似幻，</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">哪堪回首恨绵绵……</span></p>
+<p class="dialogue" style="--speaker-color:#007E99"><span style="color:#007E99"><strong>安儿：</strong> （捡起秋雁）公主你看，一只受伤的秋雁！</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 秋雁……</span></p>
+<p><em>【程武寻找秋雁上。】</em></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> （作揖赔礼）哦，这位夫人，小生打猎至此，寻找秋雁，多有冒犯！</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 是你射伤了这只秋雁？</span></p>
+<p class="dialogue" style="--speaker-color:#007E99"><span style="color:#007E99"><strong>安儿：</strong> 多可爱的小秋雁呀，你这人也太狠心了吧！（一睹程武，脱口而出）哎呀公主，这位小相公好像在哪里见过……</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> （仔细端详程武，脱口而出）驸马！</span></p>
+<p class="dialogue" style="--speaker-color:#007E99"><span style="color:#007E99"><strong>安儿：</strong> 对对对，他简直跟驸马长得一模一样呢！</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 冒昧动问小相公，今年多少年纪？</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 一十六岁。</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 怎么，你、你也是十六岁吗？</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 莫非夫人也有一个十六岁的儿子？</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 有，有一个。可惜，他在十六年前就遇害身亡了……（黯然神伤）</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 夫人……（无言以慰，扶庄姬坐下）</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 小相公，你家中还有何人？</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 只有父母双亲。</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 可否安康？</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 一切都好。</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 好，好。（像一个母亲那样教导儿子）小相公哪，父母抚养你长大成人不容易，你该懂得孝顺双亲……</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> （惊异）咦，你说这话的口气，怎么像我的娘亲？</span></p>
+<p><em>【庄姬与程武执手相看，倍感亲切。】</em></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> （唱）恍惚之间意痴迷，</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">一腔母爱涌心扉。</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">唤声娇儿热血沸，</span></p>
+<p><em>（竟把程武当作儿子，白）儿啊！</em></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> （唱）此情此景实堪悲。</span></p>
+<p><em>（善解人意地自言自语）唉，可惜我不是你的儿子，我乃是草医之子！</em></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> （敏感地）草医之子……令尊何人？</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 家父姓程，名叫程婴。</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 程婴……（一阵目眩）</span></p>
+<p class="dialogue" style="--speaker-color:#007E99"><span style="color:#007E99"><strong>安儿：</strong> 你竟有这样一个丧尽天良的贼父亲！</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> （激愤地）程婴！</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 我爹不是那样的人！</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> （唱）怒火攻心恨满腔——</span></p>
+<p><em>【舞台出现年迈的程婴，十六年前托孤的情景历历在目。】</em></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> （接唱）骂程婴，无情无义丧天良！</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">我把亲生儿子托付你，</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">你却阳奉阴违巧伪装。</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">漫说这，大丈夫，重诺轻利，</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">更奢谈，为医者，救死扶伤。</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">你这个卖孤求荣的假君子，</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">能有什么好下场？</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">可怜我，愁绝成疾无生趣，</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">十六年，思儿念儿泪汪汪。</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">十六年，梦中惊醒多少回，</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">十六年，哪堪冷雨敲孤窗。</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">伤心事，又勾起，怎能忘，</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8">一阵阵如刀剜心肠……（晕眩）</span></p>
+<p><em>【程婴百口莫辩，神情忧郁，一张脸逐渐扭曲，隐去。】</em></p>
+<p><em>【众游人闻声涌上，对着程武窃窃私语，鄙夷讥嘲。】</em></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> （又急又窘，顿足大喊）不，我爹他不是那样的人，我爹是个好人！</span></p>
+<p><em>（唱）谩骂如潮淹没我，</em></p>
+<p>讥笑如锥刺心窝。</p>
+<p>玩伴不愿靠近我，</p>
+<p>鄙夷目光更难躲。</p>
+<p>自幼儿，没有童趣少欢乐，</p>
+<p>孤独的滋味对谁说？</p>
+<p>自幼儿，爹爹常叹娘常哭，</p>
+<p>成长的烦恼这般多！</p>
+<p>究竟这是为什么，</p>
+<p>越思越想越迷惑……</p>
+<p><a id="scene-7"></a></p>
+<h2>第7场</h2><div class="scene-cast"><div class="scene-cast-title">本场出场角色</div><div class="cast-items"><span class="cast-chip" style="--speaker-color:#B42345"><span aria-hidden="true" class="cast-dot"></span>程王氏</span><span class="cast-chip" style="--speaker-color:#1769AA"><span aria-hidden="true" class="cast-dot"></span>程婴</span><span class="cast-chip" style="--speaker-color:#C45313"><span aria-hidden="true" class="cast-dot"></span>二人</span><span class="cast-chip" style="--speaker-color:#C45313"><span aria-hidden="true" class="cast-dot"></span>程武</span></div></div>
+<p><em>【屠府后院，几间幽静的竹舍是程婴一家栖身之地。】</em></p>
+<p><em>【程婴枯坐家中，怅然抚摸药箱。程王氏捧着洗衣盆上。】</em></p>
+<p>程  婴 （内疚地）夫人，你怎么又在深夜洗衣？秋风渐冷，小心着凉！哎，难为你了！</p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 难为我？你这十六年来，还不是忍气吞声、苦闷难解，哪一天过得安稳？（心疼地）每次出门，总也躲不过围攻唾骂……</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 嘿嘿，十六年来，都习惯了。（自嘲地）要是哪一天没有人骂我了，我倒反而不自在了。</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 你呀，总是苦中作乐！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （握住妻子双手）夫人，难为你了啊！</span></p>
+<p><em>（唱）难为你终日多操劳，</em></p>
+<p>艰辛苦倍尝。</p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （唱）你心更比我心苦，</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345">几番欲断肠。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （唱）再不见你昔日笑声朗，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">鬓角贴花黄。</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （唱）光阴易逝人易老，</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345">恍若梦一场。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （唱）十六年，你把孤儿来抚养，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">视如己出胜亲娘。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">程婴愧疚难言讲，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">来世犬马相报偿！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （唱）夫君哪，休把愧疚心底藏，</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345">何须犬马相报偿？</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345">你是我，沉沉死水惊天浪，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （唱）你是我，漫漫黑夜星月光。</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>二人：</strong> （合）十六年，风雨岁月相依傍，</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313">昼长夜长愁更长。</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313">何时云开雾散尽，</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313">一年一度秋风凉……</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （宽慰地）夫人，我们总会苦尽甘来的。你看，我们的儿子已经长大成人了！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （被丈夫激动之情所感染）长大了，长大了！武儿他少年英俊，仪表堂堂，文武双全，气宇轩昂，真是个百里挑一的好儿郎！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 是啊，我看武儿不像个平民子弟，倒像个将相之后！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （愈发自豪）他本来就是将相之后嘛！你看他越大越像赵驸马了……</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （警觉地）嘘——（环顾四下无人，拉扯程王氏进屋，掩门）夫人，此言若是张扬出去，你我十六年的苦心毁于一旦……</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 这是什么世道啊，难道我连夸耀自己的儿子都不成吗？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （理解地）成，成！夫人，今日上街，听说悼公皇帝要将庄姬公主接回宫中，赵家深冤，有望平反，老贼末日，就要来临。看来，我们也该对武儿言明身世了！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 什么，你要对他言明身世？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 对，言明身世，有朝一日让他回到生母怀抱！</span></p>
+<p><em>【程王氏闻言，不禁悲从中来。】</em></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 夫人……</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 我知道，这一天迟早会到来……（泪眼婆娑）只恨我，没能再为你生个儿子……</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 十六年来，我们早就把武儿当作亲生了……</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （凄怨地）可是武儿一旦回到生母怀抱，岂不是让我又一次失去儿子啊……</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （悲恸）夫人！夫人爱子心切，愚夫岂能不知；武儿若是离开，我又何曾舍得？当初救下赵氏孤儿，不就是为了天下骨肉不再分离吗？！</span></p>
+<p><em>【程王氏无言，低低饮泣。】</em></p>
+<p><em>【程武上，闷闷不乐。】</em></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 爹！娘!</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 武儿，你回来了！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （拭泪）儿啊，你饿了吧，为娘给你备饭。</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 娘，我吃不下！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 却是为何？</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 娘，今日上山打猎，碰到一位夫人，她说她也有一个十六岁的儿子，可惜被人害死了！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 哦？</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 我见她面慈目善，伤心可怜，就想认作干娘。谁知她听我道出爹的名姓，就勃然变色，还骂爹爹你——</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 骂我何来？</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 骂你是一个丧尽天良的贼父亲！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 啊！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 这位夫人，是何模样？</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 听说她是一位公主！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 公主……</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 娘啊，你快告诉我，我爹究竟是一个好人，还是一个坏人？</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 你爹，是天底下最好的好人！</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 那为什么好人反而挨骂呢？</span></p>
+<p><em>【程王氏无言以对，空自洒泪。】</em></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （看见屠岸贾的剑，大惊）儿啊，此剑从何而来？</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 今日狩猎，义父相赠。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 什么？屠岸贾把这把剑传给了你？</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 义父说，孩儿已经十六岁了，长大成人了……</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 是啊，你已经十六岁了，长大成人了。看来，辛酸往事，也该对你说了。</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （欲阻挠，紧张急切地）辛酸往事，不提也罢！</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> （疑惑地）什么辛酸往事，爹？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 我本不是你的亲爹。</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 你不是我的亲爹？难道义父是我的亲爹？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 屠岸贾也不是你的亲爹，他乃是杀死你亲爹的仇人！</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 啊！那我的亲爹是谁？我到底是谁的儿子？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 你本姓赵。</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 姓赵？！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 你父名叫赵朔。</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 赵朔！！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 你就是十六年前，满门抄斩，性命难保的赵氏孤儿！</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 赵氏孤儿……</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 赵氏孤儿！十六年了！十六年前，风雨之夜，在你满月的那一天，你离开了亲娘怀抱，藏进了一个药箱，逃过了奸贼魔掌！是三个血肉之躯，救下了你的性命——</span></p>
+<p><em>【乐声中，舞台出现几组画面，如电影中的无声闪回镜头：韩厥悲壮自刎，公孙杵臼中剑身亡，屠岸贾狰狞地高举婴儿。】</em></p>
+<p><em>【一组组画面强烈冲击着程婴夫妇的情绪，也强烈震撼着程武的心扉。】</em></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> （火山喷发般的大叫一声）天——哪！</span></p>
+<p><em>（唱）好一似恶梦初醒转，</em></p>
+<p>却原来身世太惨伤。</p>
+<p>一叩头，双泪淌，</p>
+<p>叫声爹，唤声娘。</p>
+<p>十六年，多少委屈怎消受，</p>
+<p>十六年，多少痛楚都饱尝。</p>
+<p><em>（哭喊）哎呀呀，我的爹和娘哪……</em></p>
+<p><em>【程王氏勾起痛楚往事，不胜唏嘘。】</em></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （唱）十六年，受够了，人言可畏，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">十六年，尝遍了，世态炎凉。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">平素最怕街上走，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">唾骂讥嘲冷不防。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">人前不敢悲声放，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">夜来偷偷哭几场。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">每年秋风乍起时，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">不堪回首愁断肠。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">怎能忘，义无反顾韩将军，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">舍身放孤不彷徨；</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">怎能忘，视死如归公孙老，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">惨遭折磨太悲怆；</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">怎能忘，无辜替死小生灵，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">魔爪之下一命亡。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">可怜他，连个名字都没有，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">更不能，堆一座孤坟烧一炷香。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">夫妻们，彼此安慰却无言，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">相视无泪心最伤。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">只盼着黑夜到尽头，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">只盼着雨后现晴光。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">只盼着冤仇能昭雪，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">只盼着世道无痍疮。</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">儿啊儿，你一番知情知义话，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">止不住，我干涸的泪河又沸腾，枯寂的心海又激荡，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">哎呀，我的武儿哪，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">但愿你，明是非，辨善恶，走正途，效忠良，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">我夫妻，纵然是，身骸衰朽，心血耗尽，生无下场，死无埋葬，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">千辛万苦，万苦千辛，终有报偿！</span></p>
+<p><em>【程武抬起泪眼，慢慢举起长剑……】</em></p>
+<p><a id="scene-8"></a></p>
+<h2>第8场</h2><div class="scene-cast"><div class="scene-cast-title">本场出场角色</div><div class="cast-items"><span class="cast-chip" style="--speaker-color:#087E67"><span aria-hidden="true" class="cast-dot"></span>屠岸贾</span><span class="cast-chip" style="--speaker-color:#79531D"><span aria-hidden="true" class="cast-dot"></span>张三忌</span><span class="cast-chip" style="--speaker-color:#C45313"><span aria-hidden="true" class="cast-dot"></span>程武</span><span class="cast-chip" style="--speaker-color:#B42345"><span aria-hidden="true" class="cast-dot"></span>程王氏</span><span class="cast-chip" style="--speaker-color:#1769AA"><span aria-hidden="true" class="cast-dot"></span>程婴</span><span class="cast-chip" style="--speaker-color:#7541B8"><span aria-hidden="true" class="cast-dot"></span>庄姬</span><span class="cast-chip" style="--speaker-color:#A02E83"><span aria-hidden="true" class="cast-dot"></span>所有人</span></div></div>
+<p><em>【一声霹雳，电光划过宁静的夜空。】</em></p>
+<p><em>【日渐苍老的屠岸贾，枯坐舞台一隅。】</em></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （念）近来忐忑心慌乱，</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67">屡有恶梦扰清眠。</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67">婴孩哭声萦耳畔，</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67">鬼魂哀嚎震屋檐……</span></p>
+<p><em>【张三忌惊惶失措上。】</em></p>
+<p class="dialogue" style="--speaker-color:#79531D"><span style="color:#79531D"><strong>张三忌：</strong> 大人，不好了啊，府门外大兵压境，杀声震天，为首者就是庄姬公主！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （惨然）嘿嘿嘿，该来的总会来啊！</span></p>
+<p class="dialogue" style="--speaker-color:#79531D"><span style="color:#79531D"><strong>张三忌：</strong> 大人，暗道已开，逃为上策！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 算了，你也跟了我一辈子，顾自择路而逃吧！</span></p>
+<p class="dialogue" style="--speaker-color:#79531D"><span style="color:#79531D"><strong>张三忌：</strong> 大人——</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 快走！</span></p>
+<p><em>【张三忌逃下。】</em></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （唱）大富大贵临大限，</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67">大喜大悲一夜间。</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67">大彻大悟是大劫，</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67">大灾大祸终难免！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67">忽觉凄凉身后事，</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67">幸有义子继香烟！</span></p>
+<p><em>【程武提剑上。】</em></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> （唱）三尺长剑握在手，</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313">胸潮翻滚泪难收。</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313">三百冤魂目难瞑，</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313">身世如山压心头！</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313">但见年迈一衰朽，</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313">何曾獠牙藏貔貅。</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313">心迷茫，手颤抖，</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313">苍天哪，懵懂少年怎担负，</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313">这惊涛骇浪、血海深仇……</span></p>
+<p><em>【程婴、程王氏上，驻足门外。】</em></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 武儿，你可来了，连为父赠你的宝剑也带来了？儿啊，外面重兵包围，纵有盖世武功，也难救为父一命了！（动情地）不过，你有这份孝心，也不枉为父抚养你一十六载。明年今日，唯望吾儿到为父墓前，三杯水酒，两根香烛，一番祭拜，为父就死而无憾矣……</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 我不是来救你的！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （一愣）儿哪，你……</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 我是来杀你的！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （大惊失色）杀我？</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> （逼问）你究竟是一个仁慈的父亲，还是一个残忍的恶魔？</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 你、你何出此言？</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 你究竟是一个仁慈的父亲，还是一个残忍的恶魔？你讲，你讲啊！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （直面）对，我是一个残忍的恶魔，一生荣耀，血腥染透！可是，我什么都有了，就是没有一个后代传人，没有一个儿子。自从有了你，我就变成了一个仁慈的父亲，你是我的心肝宝贝，你是我的掌上明珠！我与你朝夕相处，父子情深，如今我大劫难逃，临死之前，最想见到的人就是你呀，武儿——</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> （触动心弦）不……</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （悲怆）儿啊，你为什么不杀了他，为什么不报仇啊！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 报仇？……</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 报仇！是该报仇了！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 程婴，你、你、你报的什么仇？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 杀子之仇！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 杀子之仇？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 十六年前，你、你、你活活摔死了我的亲生儿子——</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 我摔死的乃是赵氏孤儿！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 不，赵氏孤儿还活着，赵氏孤儿就在你的面前！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 你说什么，你说什么……</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （指着程武）他，就是你斩不尽、杀不绝的赵氏孤儿！</span></p>
+<p><em>【屠岸贾大叫一声，面无血色。】</em></p>
+<p><em>【强烈的音乐声中，程婴与屠岸贾互相逼视，绕场一周。】</em></p>
+<p><em>【众兵将簇拥着庄姬公主上，众百姓牵引着与程武一般大的孩子上。由远至近，他们“注视”着程婴和屠岸贾，随着剧情的进展，或群情激愤，或羞愧难当。】</em></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （惨笑不已）嘿嘿，哼哼哼……</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （仰天长笑）哈哈，哈哈哈……</span></p>
+<p><em>【两人仍然对视，却都笑出了眼泪。】</em></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> 程婴啊，都道你医术高明，没想到，你的心术更胜一筹啊！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 你可知道，为了这一天，我，忍了整整十六年，也盼了整整十六年哪！你以为我对你忠心耿耿，你以为我对你感激涕零，你以为巨掌遮天，乾坤不可倒转；你以为翻云覆雨，公理任你践踏！你，是天下最残忍的恶魔，也是世上最愚蠢的恶魔！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （几近崩溃）程婴，十六年哪，老夫呼风唤雨，威震朝野，有谁不遵，哪个不从？没想到哇，这十六年，居然被你一个小小的民间草医，这般戏弄！程婴，你就一剑杀了我吧！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （愈加激愤）一剑杀你，岂能消解仇恨？你这恶魔，应当千刀万剐！第一剑，为韩厥将军报仇，可敬他义薄云天，肝胆照人，一死何其悲壮！</span></p>
+<p><em>【程婴一剑刺去，屠岸贾本能地躲闪。】</em></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 第二剑，为公孙老人报仇，可叹他风烛残年，舍身取义，最终暴尸街头！</span></p>
+<p><em>【程婴又一剑刺去，屠岸贾右臂中剑，哇哇乱叫。】</em></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 第三剑，为我那刚刚满月就无辜送命的儿子报仇！可怜我夫妇二人，对着千夫所指，还须忍气吞声；顶着如潮唾骂，却要强作笑脸；忍着奇耻大辱，却只能背后流泪——心，就这样被扭曲了；魂，就这样被撕裂了……可是，我也暗中庆幸，正是这一唾一骂，一羞一辱，助我瞒过了你这老贼，助我养大了赵氏孤儿。赵氏孤儿终于长大成人，老贼，你的末日来临了！</span></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （跪地哀求）程婴，你杀了我，你快杀了我啊！给我一个了断，给我们血光冲天的怨怨仇仇一个了断吧！程婴，你还等什么？你为什么还不下手？！</span></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 快杀了他，为我们的儿子报仇！</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 快杀了他，为赵家报仇！</span></p>
+<p class="dialogue" style="--speaker-color:#A02E83"><span style="color:#A02E83"><strong>所有人：</strong> （呐喊）杀了他，杀了他！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （紧盯着屠岸贾，泪光闪烁，两番举剑却难以下手，直至浑身发抖）不，不……我这双手，只会诊脉断病，而你这双手，嗜杀无度！我本该斩你双臂，刺你胸膛，抽你筋骨，挖你黑心……可是我、我怎么下得了像你那样的毒手啊？！（恸哭）</span></p>
+<p><em>【“咣当”一声，程婴把长剑重重地插在了地上。】</em></p>
+<p class="dialogue" style="--speaker-color:#087E67"><span style="color:#087E67"><strong>屠岸贾：</strong> （仰天大叫）程婴哪！</span></p>
+<p><em>【一把长剑，从天而降，屠岸贾绝望地倒下，随即被百姓的唾骂淹没了。】</em></p>
+<p><em>【程婴筋疲力尽地瘫跪在地上。】</em></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （唱）自有乾坤惩奸佞，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">何须刀剑又血腥？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">往事烟消云散去，</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA">心随风吹雨飘零！</span></p>
+<p><em>【幕后伴唱：】</em></p>
+<p>天地间，一个治病救人者，</p>
+<p>只遗下，一颗悬壶济世心……</p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> （拉着程武走到庄姬面前）来，武儿，见过你的生身母亲。</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 儿啊——</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> 娘——</span></p>
+<p><em>【庄姬母子，抱头痛哭。】</em></p>
+<p><em>【程婴夫妇羡慕地看着他们母子团聚的情景。】</em></p>
+<p class="dialogue" style="--speaker-color:#B42345"><span style="color:#B42345"><strong>程王氏：</strong> 老伴，你的心愿了了！</span></p>
+<p><em>【庄姬母子从团聚的喜悦中回过神来。】</em></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> （近前）程老先生，你舍子救孤，功高盖世，我想奏请皇上，为你封官加冕！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 不不，我不当官。</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 那就呈送黄金百两，安度晚年！</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> 不不，我也不要黄金。</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 那你们想要什么？</span></p>
+<p class="dialogue" style="--speaker-color:#1769AA"><span style="color:#1769AA"><strong>程婴：</strong> （平静一笑）我们什么也不要。我只想做个草泽医生。老伴，我们回家去吧，啊？</span></p>
+<p class="dialogue" style="--speaker-color:#C45313"><span style="color:#C45313"><strong>程武：</strong> （再也忍不住巨大的感情波涛，眼泪倾盆而下）爹，娘，我知道你们想要什么，你们只想要一个儿子。我，就是你们的亲儿子，你们永远都是我的亲爹亲娘！（长跪不起）</span></p>
+<p class="dialogue" style="--speaker-color:#7541B8"><span style="color:#7541B8"><strong>庄姬：</strong> 我们晋国所有十六岁的孩子，永远是你们的亲生儿女！</span></p>
+<p><em>【所有孩子呼唤着“爹，娘——”， 纷纷跪下。】</em></p>
+<p><em>【《秋风歌》回荡：】</em></p>
+<p>秋风吼，秋雨骤，</p>
+<p>秋叶片片丢。</p>
+<p>秋啊秋，多事秋，</p>
+<p>秋虫阵阵啾。</p>
+<p>人间沧桑道不得，</p>
+<p>只说天凉好个秋……</p>
+<p><em>【程婴夫妇热泪飞扬，在众人的目送下渐行渐远……】</em></p>
+<p><em>【幕落。】</em></p>
+<p>2000年08月10日初稿</p>
+<p>2004年11月15日十稿</p>
+<p>2004年12月15日润笔</p>
+<p>2005年01月20日再改</p>
+<p>2005年06月06日定稿</p>
+<p>2006年06月06日修订</p>
+<p>2006年11月11日打磨</p>
+<p><em>【注：2006年分别参加中国越剧艺术节、全国地方戏（南方片）交流演出。】</em></p>
+<footer>《赵氏孤儿》 · 编剧：余青峰 · 根据所提供剧本制作的阅读版</footer></main></div>
+</body></html>
